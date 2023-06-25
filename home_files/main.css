@@ -1,0 +1,230 @@
+.designed-by{
+    text-align: center;
+    margin-top: 20px; /* İstenilen boşluk miktarını ayarla */
+  }
+
+  .social-media-links {
+    text-align: center;
+    margin-top: 20px; /* İstenilen boşluk miktarını ayarla */
+  }
+
+  .social-media-links a i {
+    color: gray;
+  }
+  @keyframes move {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-50px);
+    }
+    100% {
+      transform: translateX(50px);
+    }
+  }
+  
+  @keyframes shake {
+    0% {
+      transform: translateX(0);
+    }
+    10% {
+      transform: translateX(-5px) rotateZ(-5deg);
+    }
+    20% {
+      transform: translateX(5px) rotateZ(5deg);
+    }
+    30% {
+      transform: translateX(-5px) rotateZ(-5deg);
+    }
+    40% {
+      transform: translateX(5px) rotateZ(5deg);
+    }
+    50% {
+      transform: translateX(-5px) rotateZ(-5deg);
+    }
+    60% {
+      transform: translateX(5px) rotateZ(5deg);
+    }
+    70% {
+      transform: translateX(-5px) rotateZ(-5deg);
+    }
+    80% {
+      transform: translateX(5px) rotateZ(5deg);
+    }
+    90% {
+      transform: translateX(-5px) rotateZ(-5deg);
+    }
+    100% {
+      transform: translateX(0) rotateZ(0);
+    }
+  }
+  
+  .animated-icon {
+    animation: move 3s infinite alternate, shake 1s infinite;
+  }
+
+  .fa-map-marker, .fa-phone{
+    animation: move 3s infinite alternate, shake 1s infinite;
+  }
+
+  /* Animasyon tanımı */
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  /* İkonun animasyonunu etkinleştirme */
+  .fa-microphone {
+    animation: spin 2s linear infinite;
+  }
+
+  @keyframes slide-in-out {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    25% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    75% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+  }
+
+  @keyframes fade-in-out {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  .designed-by {
+    text-align: center;
+  }
+  
+  .designed-by p {
+    position: relative;
+    animation: slide-in-out 5s infinite, fade-in-out 5s infinite;
+  }
+
+  .w3-half img {
+    transition: transform 0.5s;
+  }
+  
+  .w3-half img:hover {
+    transform: scale(1.2) rotateY(360deg);
+  }
+
+  .image-with-shadow {
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 0 rgba(255, 0, 0, 0); /* Başlangıçta gölge yok */
+  }
+  
+  .image-with-shadow:hover {
+    transform: scale(1.2) rotateY(360deg);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5); /* Kırmızı gölge efekti */
+  }
+
+  @media screen and (max-width: 768px) {
+    .w3-sidebar .audio-container {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (min-width: 769px) {
+    .w3-sidebar .audio-container {
+      width: 150px;
+    }
+  }
+  .audio-container {
+    width: 100%;
+    height: 65px;
+  }
+
+  p {
+    box-shadow: 0 0 0 rgba(255, 0, 0, 0); /* Başlangıçta gölge yok */
+  }
+
+  p:hover {
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5); /* Kırmızı gölge efekti */
+  }
+
+  .w3-input {
+    background-color: black;
+    color: rgba(255, 0, 0, 0.5);
+    box-shadow: 0 0 5px 0,rgba(255,  0, 0.5);
+    font-family: 'Indie Flower', cursive;
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+    .header-text {
+      font-family: 'Indie Flower', cursive;
+      font-size: 48px;
+      color: rgba(255, 0, 0, 0.5);
+    }
+    div>p{
+    font-family: 'Indie Flower', cursive;
+    font-size: 32px;
+    color: rgba(255, 0, 0, 0.5);
+  }
+  body>div>a {
+    font-family: 'Indie Flower', cursive;
+    font-size: 98%;
+    color: rgba(255, 0, 0, 0.5);
+}
+nav>a>p{
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+    color: rgba(255, 0, 0, 0.5);
+}
+  audio {
+     width: 100%;
+     height: 40px;
+  }
+
+  @keyframes colorChange {
+    0%, 50% {
+      background-color: black;
+      border-radius: 50%;
+      box-shadow: 10%;
+    }
+    25%, 75% {
+      background-color: rgba(255, 0, 0.5);
+      border-radius: 50%;
+    }
+    100% {
+      background-color: black;
+      border-radius: 50%;
+    }
+  }
+  audio {
+    animation: colorChange 10s linear infinite;
+  }
+  .fa-guitar-electric {
+    color: white;
+  }
+
+  #about {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("queen2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  font-weight: 900;
+}
+
+  
+  
+  
+  
+  
+  
